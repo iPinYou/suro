@@ -1,6 +1,9 @@
 package com.netflix.suro.sink.notice;
 
+<<<<<<< HEAD
 import com.netflix.util.Pair;
+=======
+>>>>>>> FETCH_HEAD
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +30,7 @@ public class LogNotice implements Notice<String> {
     }
 
     @Override
+<<<<<<< HEAD
     public Pair<String, String> peek() {
         return null;
     }
@@ -37,6 +41,8 @@ public class LogNotice implements Notice<String> {
     }
 
     @Override
+=======
+>>>>>>> FETCH_HEAD
     public String getStat() {
         return null;
     }

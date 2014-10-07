@@ -16,7 +16,11 @@
 
 package com.netflix.suro.sink.notice;
 
+<<<<<<< HEAD
 import com.netflix.util.Pair;
+=======
+import com.netflix.suro.sink.notice.Notice;
+>>>>>>> FETCH_HEAD
 
 /**
  * Do nothing for debugging purpose
@@ -41,6 +45,7 @@ public class NoNotice implements Notice<String> {
     }
 
     @Override
+<<<<<<< HEAD
     public Pair<String, String> peek() {
         return null;
     }
@@ -51,6 +56,8 @@ public class NoNotice implements Notice<String> {
     }
 
     @Override
+=======
+>>>>>>> FETCH_HEAD
     public String getStat() {
         return "No";
     }

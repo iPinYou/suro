@@ -15,7 +15,11 @@ public class DynamicRemotePrefixFormatter implements RemotePrefixFormatter {
 
     @JsonCreator
     public DynamicRemotePrefixFormatter(@JsonProperty("format") String formatString) {
+<<<<<<< HEAD
         String[] formatList = formatString.split(";");
+=======
+        String[] formatList = formatString.split("/");
+>>>>>>> FETCH_HEAD
         for (String format : formatList) {
             formatterList.add(createFormatter(format));
         }

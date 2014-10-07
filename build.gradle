@@ -172,8 +172,11 @@ project(':suro-kafka') {
       exclude module: 'zookeeper'
     }
 
+<<<<<<< HEAD
     compile files('lib/kafka-clients-0.8.2-SNAPSHOT.jar')
 
+=======
+>>>>>>> FETCH_HEAD
     testCompile 'org.apache.curator:curator-test:2.4.2'
     testCompile project(':suro-client')
   }

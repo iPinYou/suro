@@ -35,6 +35,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+<<<<<<< HEAD
+=======
+import java.io.IOException;
+import java.net.ServerSocket;
+>>>>>>> FETCH_HEAD
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -87,7 +92,11 @@ public class TestConnectionPool {
     public static List<SuroServer4Test> startServers(int count) throws Exception {
         List<SuroServer4Test> collectors = new LinkedList<SuroServer4Test>();
         for (int i = 0; i < count; ++i) {
+<<<<<<< HEAD
             SuroServer4Test c = new SuroServer4Test();
+=======
+            SuroServer4Test c = new SuroServer4Test(pickPort());
+>>>>>>> FETCH_HEAD
             c.start();
             collectors.add(c);
         }
@@ -95,6 +104,16 @@ public class TestConnectionPool {
         return collectors;
     }
 
+<<<<<<< HEAD
+=======
+    public static int pickPort() throws IOException {
+        ServerSocket s = new ServerSocket(0);
+        int port = s.getLocalPort();
+        s.close();
+        return port;
+    }
+
+>>>>>>> FETCH_HEAD
     public static String createConnectionString(List<SuroServer4Test> servers) {
         List<String> addrList = new ArrayList<String>();
         for (SuroServer4Test c : servers) {

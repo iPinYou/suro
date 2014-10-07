@@ -22,7 +22,11 @@ import com.netflix.servo.annotations.DataSourceType;
 import com.netflix.servo.annotations.Monitor;
 import com.netflix.servo.monitor.Monitors;
 import com.netflix.suro.TagKey;
+<<<<<<< HEAD:suro-core/src/main/java/com/netflix/suro/sink/notice/QueueNotice.java
 import com.netflix.util.Pair;
+=======
+import com.netflix.suro.sink.notice.Notice;
+>>>>>>> FETCH_HEAD:suro-core/src/main/java/com/netflix/suro/sink/notice/QueueNotice.java
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"document-routing": {
 		"where": [
@@ -16,3 +17,6 @@
 		]
 	}
 }
+=======
+{}
+>>>>>>> FETCH_HEAD

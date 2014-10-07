@@ -13,10 +13,17 @@ public class TestSuroPing {
 
     @Test
     public void pingTest() throws Exception {
+<<<<<<< HEAD
         final SuroServer4Test server4Test = new SuroServer4Test();
         server4Test.start();
         SuroPing ping = new SuroPing();
         Server server = new Server("localhost", server4Test.getPort());
+=======
+        final SuroServer4Test server4Test = new SuroServer4Test(7901);
+        server4Test.start();
+        SuroPing ping = new SuroPing();
+        Server server = new Server("localhost", 7901);
+>>>>>>> FETCH_HEAD
         assertEquals(true, ping.isAlive(server));
         server4Test.shutdown();
     }

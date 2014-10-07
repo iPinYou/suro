@@ -1,6 +1,7 @@
 {
     "default": {
         "type": "local",
+<<<<<<< HEAD
         "outputDir": "/tmp/suroserver/default",
         "writer": {
             "type": "text"
@@ -30,6 +31,10 @@
     "logger-sink": {
         "type": "local",
         "outputDir": "/tmp/suroserver/logger",
+=======
+        "outputDir": "/tmp/suroserver",
+        "minPercentFreeDisk": 10,
+>>>>>>> FETCH_HEAD
         "writer": {
             "type": "text"
         }

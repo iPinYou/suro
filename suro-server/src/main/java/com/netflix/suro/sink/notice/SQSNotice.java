@@ -30,7 +30,10 @@ import com.netflix.servo.annotations.DataSourceType;
 import com.netflix.servo.annotations.Monitor;
 import com.netflix.servo.monitor.Monitors;
 import com.netflix.suro.TagKey;
+<<<<<<< HEAD
 import com.netflix.util.Pair;
+=======
+>>>>>>> FETCH_HEAD
 import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -192,6 +195,7 @@ public class SQSNotice implements Notice<String> {
     }
 
     @Override
+<<<<<<< HEAD
     public Pair<String, String> peek() {
         ReceiveMessageRequest request = new ReceiveMessageRequest()
                 .withQueueUrl(queueUrls.get(0))
@@ -233,6 +237,8 @@ public class SQSNotice implements Notice<String> {
     }
 
     @Override
+=======
+>>>>>>> FETCH_HEAD
     public String getStat() {
         return String.format("SQSNotice with the queues: %s, sent : %d, received: %d, dropped: %d",
                 queues, sentMessageCount.get(), recvMessageCount.get(), lostMessageCount.get());

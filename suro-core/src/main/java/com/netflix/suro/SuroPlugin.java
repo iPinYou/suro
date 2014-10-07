@@ -2,7 +2,10 @@ package com.netflix.suro;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
+<<<<<<< HEAD
 import com.netflix.suro.input.RecordParser;
+=======
+>>>>>>> FETCH_HEAD
 import com.netflix.suro.input.SuroInput;
 import com.netflix.suro.routing.Filter;
 import com.netflix.suro.sink.Sink;
@@ -43,6 +46,7 @@ public abstract class SuroPlugin extends AbstractModule {
         bindings.addBinding().toInstance(new TypeHolder(typeName, inputClass));
     }
 
+<<<<<<< HEAD
     public <T extends RecordParser> void addRecordParserType(String typeName, Class<T> recordParserClass) {
         LOG.info("Adding recordParser: " + typeName + " -> " + recordParserClass.getCanonicalName());
 
@@ -51,6 +55,8 @@ public abstract class SuroPlugin extends AbstractModule {
         bindings.addBinding().toInstance(new TypeHolder(typeName, recordParserClass));
     }
 
+=======
+>>>>>>> FETCH_HEAD
     public <T extends RemotePrefixFormatter> void addRemotePrefixFormatterType(String typeName, Class<T> remotePrefixFormatterClass) {
         LOG.info("Adding remotePrefixFormatterType: " + typeName + " -> " + remotePrefixFormatterClass.getCanonicalName());
 

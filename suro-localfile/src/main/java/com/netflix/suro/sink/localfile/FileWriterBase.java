@@ -44,7 +44,11 @@ public class FileWriterBase {
         this.conf = conf;
 
         try {
+<<<<<<< HEAD:suro-localfile/src/main/java/com/netflix/suro/sink/localfile/FileWriterBase.java
             fs = FileSystem.getLocal(conf);
+=======
+            fs = FileSystem.get(conf);
+>>>>>>> FETCH_HEAD:suro-localfile/src/main/java/com/netflix/suro/sink/localfile/FileWriterBase.java
             fs.setVerifyChecksum(false);
             if (codecClass != null) {
                 codec = createCodecInstance(codecClass);
